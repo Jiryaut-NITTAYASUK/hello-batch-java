@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    jdbc-url: jdbc:h2:file:C:/prototype/batch-demo/testdb
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  batch:
+    job:
+      enabled: false
+    jdbc:
+      initialize-schema: always
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+
+logging:
+  level:
+    root: info
